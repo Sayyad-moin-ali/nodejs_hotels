@@ -16,8 +16,8 @@ const menuItemRoute = require("./routes/menuItemRoute")
 app.use('/person', personRoutes);
 app.use("/menu", menuItemRoute)
 
-const port=process.env.PORT||3000
+const port=process.env.PORT||4000
 
 app.listen(port, () => {
-    console.log("listning on port 3000")
+    console.log(`listning on port ${port}`)
 })
