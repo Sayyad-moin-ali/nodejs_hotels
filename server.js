@@ -28,7 +28,7 @@ const personRoutes = require("./routes/personRoute")
 const menuItemRoute = require("./routes/menuItemRoute");
 const person = require('./models/person');
 
-app.use('/person', localAuthMiddleware, personRoutes);
+app.use('/person', personRoutes);
 app.use("/menu", menuItemRoute)
 
 const port = process.env.PORT || 4000
